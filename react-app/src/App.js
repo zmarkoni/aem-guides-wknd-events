@@ -1,17 +1,15 @@
 import React from 'react';
 import { Page, withModel, EditorContext, Utils } from '@adobe/cq-react-editable-components';
-
+import Header from './components/header/Header';
 // This component is the application entry point
 class App extends Page {
 
     render() {
         return (
             <div className="App">
-                <header className="App-header">
-                    <h1>Welcome to AEM + React</h1>
-                </header>
-                    { this.childComponents }
-                    { this.childPages }
+                <Header />
+                { this.childComponents }
+                { this.childPages }
             </div>
         );
     }
