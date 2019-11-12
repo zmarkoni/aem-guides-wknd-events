@@ -6,7 +6,7 @@ import { ModelManager, Constants } from '@adobe/cq-spa-page-model-manager';
 import App from './App';
 // include all React components that map to an AEM component
 import "./components/MappedComponents";
-import './index.css';
+import './index.scss';
 
 function render(model) {
     ReactDOM.render(( <App cqChildren={ model[Constants.CHILDREN_PROP] } cqItems={ model[Constants.ITEMS_PROP] } cqItemsOrder={ model[Constants.ITEMS_ORDER_PROP] }
